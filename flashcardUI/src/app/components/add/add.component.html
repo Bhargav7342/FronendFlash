@@ -1,0 +1,16 @@
+<form #addDetails="ngForm" (ngSubmit)="adddetails(addDetails.value)">
+    <h1>Add New Card</h1>
+    <mat-card-content>
+        <mat-label>Question</mat-label>
+    <mat-form-field class="example-full-width" appearance="fill"> 
+        <input matInput type="text" name="question" ngModel>
+    </mat-form-field><br>
+    <mat-label >Answer</mat-label>
+    <mat-form-field class="example-full-width" appearance="fill">
+        <input id="i1" type="text" name="answer" ngModel>
+    </mat-form-field>
+    <mat-card-actions>
+        <button type="submit" mat-raised-button style="background-color:#ff0808;color:white;height: 30px;margin-right: 110px;margin-top: 20px;" >Add</button>
+    </mat-card-actions>
+</mat-card-content>
+</form>

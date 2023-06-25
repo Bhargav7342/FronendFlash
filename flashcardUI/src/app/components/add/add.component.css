@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+    font-size: 30px;
+    line-height: 48px;
+    margin-top: 5%;
+    color: #000000;
+}
+button{
+   margin: auto;
+   width: 50%;
+   margin-bottom: 2%;
+   color: white;
+}
+
+#i1
+{
+    margin-left: 10px;
+}
+

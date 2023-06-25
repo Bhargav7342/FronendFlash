@@ -1,1 +1,12 @@
-<h1>Hello</h1>
+<mat-toolbar>
+    <span>Flash Cards</span>
+    <span class="example-spacer"></span>
+    <div class="butt">
+    <button mat-raised-button color="warn" (click)="flipCardOnClick()">Card/Table Toggle</button>
+    <button mat-raised-button color="warn" id="b2" (click)="AddNewCard()">Add Card</button>
+    </div>
+  </mat-toolbar>
+
+<app-card [flipCard]="flipCard"></app-card>
+<app-table [flipCard]="flipCard"></app-table>
+<router-outlet></router-outlet>
