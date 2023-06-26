@@ -3,11 +3,11 @@
             <mat-card-content>
                 <mat-label>Question</mat-label>
             <mat-form-field class="example-full-width" appearance="fill"> 
-                <input matInput name="question" ngModel>
+                <input matInput name="question" [(ngModel)]="dataset.question">
             </mat-form-field><br>
             <mat-label >Answer</mat-label>
             <mat-form-field class="example-full-width" appearance="fill">
-                <input id="i1" name="answer" ngModel>
+                <input id="i1" name="answer" [(ngModel)]="dataset.answer">
             </mat-form-field>
             <mat-card-actions>
                 <button type="submit" mat-raised-button style="background-color:#ff0808;color:white;height: 30px;" >Save</button>

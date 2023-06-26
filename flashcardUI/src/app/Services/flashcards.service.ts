@@ -45,4 +45,9 @@ export class FlashcardsService {
 
     return this.http.delete<Flashes>(this.baseApiUrl+'api/Flashcard/Delete_Flashcard',{headers:header})
   }
+
+  updateCard(updateCard:Flashes):Observable<Flashes>
+  {
+    return this.http.put<Flashes>(this.baseApiUrl+'api/Flashcard/Update_Flashcard',updateCard)
+  }
 }

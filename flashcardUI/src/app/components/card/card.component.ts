@@ -14,22 +14,22 @@ import { Route, Router } from '@angular/router';
 
 export class CardComponent implements OnInit {
   constructor(private dailogbox:MatDialog,private cardservice:FlashcardsService,private router:Router)
-  {}
+  {this.cardservice.getCardDetails().subscribe({
+    next:(respose)=>
+    {
+      console.log(respose);
+      this.datasets=respose;
+    },
+    error:(e)=>{
+      window.alert("Something went wrong");
+    }
+  })}
 
   @Input() flipCard:boolean= false;
   datasets:Flashes[]=[];
 
   ngOnInit(): void {
-    this.cardservice.getCardDetails().subscribe({
-      next:(respose)=>
-      {
-        console.log(respose);
-        this.datasets=respose;
-      },
-      error:(e)=>{
-        window.alert("Something went wrong");
-      }
-    })
+    
     
   }
   
