@@ -10,3 +10,7 @@
 .home{
     background-image: linear-gradient(163deg, #bb05f221 0%, #3700ff44 100%);
 }
+
+mat-icon{
+margin-right: 2px;
+}
